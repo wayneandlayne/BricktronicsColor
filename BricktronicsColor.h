@@ -24,8 +24,15 @@
 #ifndef BRICKTRONICSCOLOR_H
 #define BRICKTRONICSCOLOR_H
 
-// Header files
+// Arduino header files
 #include <stdint.h>
+#if ARDUINO >= 100
+#include "Arduino.h"
+#else
+#include "WProgram.h"
+#endif
+
+// Library header files
 #include "utility/BricktronicsSettings.h"
 #include "utility/digitalWriteFast.h"
 
