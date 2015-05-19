@@ -17,12 +17,15 @@
 
 // 1. With a Bricktronics Shield - Include these lines and be sure to
 // call Bricktronics::begin() in the setup() function below.
+// You also need to install the Adafruit MCP23017 library:
+//	https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
 // Select the sensor ports for the Button (BS_SENSOR_1 through BS_SENSOR_4)
 // and ColorSensor (BS_SENSOR_3 and BS_SENSOR_4) below.
 // If your chosen port has jumpers, connect pins 2-3 and 4-5 for the button,
 // and connect only pins 3-4 for the color sensor.
 //
 //#include <Wire.h>
+//#include <Adafruit_MCP23017.h>
 //#include <Bricktronics2.h>
 //Button b = Button(Bricktronics::BS_SENSOR_1);
 //ColorSensor c = ColorSensor(Bricktronics::BS_SENSOR_3);
