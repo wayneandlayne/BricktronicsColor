@@ -7,8 +7,8 @@
 
 
 // Include the Bricktronics Button and ColorSensor libraries
-#include <Button.h>
-#include <ColorSensor.h>
+#include <BricktronicsButton.h>
+#include <BricktronicsColor.h>
 
 
 // This example can be run in three different ways. Pick one, and un-comment
@@ -16,43 +16,43 @@
 // for the other methods that you aren't using.
 
 // 1. With a Bricktronics Shield - Include these lines and be sure to
-// call Bricktronics::begin() in the setup() function below.
+// call BricktronicsShield::begin() in the setup() function below.
 // You also need to install the Adafruit MCP23017 library:
 //	https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
-// Select the sensor ports for the Button (BS_SENSOR_1 through BS_SENSOR_4)
-// and ColorSensor (BS_SENSOR_3 and BS_SENSOR_4) below.
-// If your chosen port has jumpers, connect pins 2-3 and 4-5 for the button,
-// and connect only pins 3-4 for the color sensor.
+// Select the sensor ports for the Button (SENSOR_1 through SENSOR_4)
+// and ColorSensor (SENSOR_3 or SENSOR_4) in their constructors below.
+// If your chosen port has jumpers (ports 3 and 4), connect pins 2-3 and
+// 4-5 for the button, and connect only pins 3-4 for the color sensor.
 //
 //#include <Wire.h>
 //#include <Adafruit_MCP23017.h>
-//#include <Bricktronics2.h>
-//Button b = Button(Bricktronics::BS_SENSOR_1);
-//ColorSensor c = ColorSensor(Bricktronics::BS_SENSOR_3);
+//#include <BricktronicsShield.h>
+//BricktronicsButton b(BricktronicsShield::SENSOR_1);
+//BricktronicsColor c(BricktronicsShield::SENSOR_3);
 
 // 2. With a Bricktronics Megashield - Include these lines but do not
-// call Bricktronics::begin() in the setup() function below.
-// Select the sensor ports for the Button (BMS_SENSOR_1 through BMS_SENSOR_4)
-// and ColorSensor (BMS_SENSOR_1 through BMS_SENSOR_4) below.
+// call BricktronicsShield::begin() in the setup() function below.
+// Select the sensor ports for the button (SENSOR_1 through SENSOR_4)
+// and color sensor (SENSOR_1 through SENSOR_4) in their constructors below.
 // If your chosen port has jumpers, connect pins 2-3 and 4-5 for the button,
 // and connect only pins 3-4 for the color sensor.
 //
-//#include <Bricktronics2.h>
-//Button b = Button(Bricktronics::BMS_SENSOR_1);
-//ColorSensor c = ColorSensor(Bricktronics::BMS_SENSOR_3);
+//#include <BricktronicsMegashield.h>
+//BricktronicsButton b(BricktronicsMegashield::SENSOR_1);
+//BricktronicsColor c(BricktronicsMegashield::SENSOR_3);
 
 // 3. With two Bricktronics Breakout boards - No additional includes needed, just
-// update the pin assignments in the Button and ColorSensor constructors below.
+// update the pin assignments in the button and color sensor constructors below.
 //
-// The Button() argument is simply the pin the button is connected to, that is, wherever
-// pin 1 of the Breakout board is connected (also connect the grounds).
+// The BricktronicsButton() argument is simply the pin the button is connected to,
+// that is, wherever pin 1 of the Breakout board is connected (also connect the grounds).
 //
-// The ColorSensor() arguments are: clockPin, dataPin
+// The BricktronicsColor() arguments are: clockPin, dataPin
 // There are a few considerations for pin assignments:
-// dataPin - This must be an analog pin.
+//    dataPin - This must be an analog pin.
 //
-//Button b = Button(7);
-//ColorSensor c = ColorSensor(8, 16);
+//BricktronicsButton b(7);
+//BricktronicsColor c(8, 16);
 
 void setup() 
 {
@@ -61,7 +61,7 @@ void setup()
 
   // Only call this if you are using a Bricktronics Shield,
   // otherwise leave it commented-out.
-  //Bricktronics::begin();
+  //BricktronicsShield::begin();
 
   // Initialize the button and color sensor connections
   b.begin();
