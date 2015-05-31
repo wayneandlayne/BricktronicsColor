@@ -1,24 +1,24 @@
 /*
-    Bricktronics library for LEGO NXT Color sensors.
+   BricktronicsColor v1.2 - A software library for LEGO NXT Color sensors.
 
-    Copyright (C) 2014 Adam Wolf, Matthew Beckler, John Baichtal
+   Copyright (C) 2015 Adam Wolf, Matthew Beckler, John Baichtal
 
-    The contents of this file are subject to the Mozilla Public License Version 1.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
-    Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License.
+   The contents of this file are subject to the Mozilla Public License Version 1.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+   Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License.
 
-    The Original Code is from leJos.
-    The Initial Developer of the Original Code is leJos. All Rights Reserved.
+   The Original Code is from leJos.
+   The Initial Developer of the Original Code is leJos. All Rights Reserved.
 
-    Contributor(s): Adam Wolf, Matthew Beckler, John Baichtal.
+   Contributor(s): Adam Wolf, Matthew Beckler, John Baichtal.
 
-    Most of the stuff here is original to Wayne and Layne, but one or two functions are straight from leJos, an open source alternative firmware for the NXT.
+   Most of the stuff here is original to Wayne and Layne, but one or two functions are straight from leJos, an open source alternative firmware for the NXT.
 
-    Wayne and Layne invests time and resources providing this open-source
-    code, please support W&L and open-source hardware by purchasing products
-    from https://store.wayneandlayne.com/ - Thanks!
+   Wayne and Layne invests time and resources providing this open-source
+   code, please support W&L and open-source hardware by purchasing products
+   from https://store.wayneandlayne.com/ - Thanks!
 
-    Wayne and Layne, LLC and our products are not connected to or endorsed by the LEGO Group.
-    LEGO, Mindstorms, and NXT are trademarks of the LEGO Group.
+   Wayne and Layne, LLC and our products are not connected to or endorsed by the LEGO Group.
+   LEGO, Mindstorms, and NXT are trademarks of the LEGO Group.
 */
 
 #include "BricktronicsColor.h"
