@@ -24,11 +24,13 @@
 // If your chosen port has jumpers (ports 3 and 4), connect pins 2-3 and
 // 4-5 for the button, and connect only pins 3-4 for the color sensor.
 //
+// Config 1 - arduino:avr:uno
 //#include <Wire.h>
 //#include <Adafruit_MCP23017.h>
 //#include <BricktronicsShield.h>
 //BricktronicsButton b(BricktronicsShield::SENSOR_1);
 //BricktronicsColor c(BricktronicsShield::SENSOR_3);
+// Config end
 
 // 2. With a Bricktronics Megashield - Include these lines but do not
 // call BricktronicsShield::begin() in the setup() function below.
@@ -37,9 +39,11 @@
 // If your chosen port has jumpers, connect pins 2-3 and 4-5 for the button,
 // and connect only pins 3-4 for the color sensor.
 //
+// Config 2 - arduino:avr:mega:cpu=atmega2560
 //#include <BricktronicsMegashield.h>
 //BricktronicsButton b(BricktronicsMegashield::SENSOR_1);
 //BricktronicsColor c(BricktronicsMegashield::SENSOR_3);
+// Config end
 
 // 3. With two Bricktronics Breakout boards - No additional includes needed, just
 // update the pin assignments in the button and color sensor constructors below.
@@ -51,8 +55,10 @@
 // There are a few considerations for pin assignments:
 //    dataPin - This must be an analog pin.
 //
+// Config 3 - arduino:avr:uno
 //BricktronicsButton b(7);
 //BricktronicsColor c(8, 16);
+// Config end
 
 void setup() 
 {
@@ -61,7 +67,9 @@ void setup()
 
   // Only call this if you are using a Bricktronics Shield,
   // otherwise leave it commented-out.
+  // Config 1 - arduino:avr:uno
   //BricktronicsShield::begin();
+  // Config end
 
   // Initialize the button and color sensor connections
   b.begin();
