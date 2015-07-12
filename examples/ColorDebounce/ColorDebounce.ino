@@ -7,6 +7,13 @@
 // transition. The debounced color is printed to the serial console.
 // This isn't necessarily the simplest or best way to debounce,
 // but it works for what we're using it for!
+//
+// Written in 2015 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
+// To the extent possible under law, the author(s) have dedicated all
+//   copyright and related and neighboring rights to this software to the
+//   public domain worldwide. This software is distributed without any warranty.
+// You should have received a copy of the CC0 Public Domain Dedication along
+//   with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
 
 
 // Include the Bricktronics ColorSensor library
