@@ -51,9 +51,18 @@
 // 3. With a Bricktronics Breakout board - No additional includes needed, just
 // update the pin assignments in the BricktronicsColor constructor below.
 //
+// For the color sensor, connect these pins on the Bricktronics Breakout board:
+//  Pin 1 - Unused
+//  Pin 2 - Connect to Ground
+//  Pin 3 - Connect to Ground
+//  Pin 4 - Connect to 5V
+//  Pin 5 - Connect to any digital pin
+//  Pin 6 - Connect to any analog input pin
+//
 // The BricktronicsColor() arguments are: clockPin, dataPin
-// There are a few considerations for pin assignments:
-//      dataPin - This must be an analog pin.
+// clockPin is where the breakout board's pin 5 is connected
+// dataPin is where the breakout board's pin 6 is connected
+//    This must be an analog pin.
 //
 // Config 3 - arduino:avr:uno
 //BricktronicsColor c(8, 16);

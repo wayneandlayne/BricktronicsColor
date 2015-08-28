@@ -55,12 +55,29 @@
 // 3. With two Bricktronics Breakout boards - No additional includes needed, just
 // update the pin assignments in the button and color sensor constructors below.
 //
-// The BricktronicsButton() argument is simply the pin the button is connected to,
-// that is, wherever pin 1 of the Breakout board is connected (also connect the grounds).
+// For the pushbutton, connect these pins on the Bricktronics Breakout board:
+//  Pin 1 - Connect to any digital input pin
+//  Pin 2 - Connect to Ground
+//  Pin 3 - Connect to Ground
+//  Pin 4 - Connect to 5V
+//  Pin 5 - No connection
+//  Pin 6 - No connection
+//
+// For the color sensor, connect these pins on the Bricktronics Breakout board:
+//  Pin 1 - Unused
+//  Pin 2 - Connect to Ground
+//  Pin 3 - Connect to Ground
+//  Pin 4 - Connect to 5V
+//  Pin 5 - Connect to any digital pin
+//  Pin 6 - Connect to any analog input pin
+//
+// The BricktronicsButton() argument is simply the pin where the button's
+// pin 1 is connected.
 //
 // The BricktronicsColor() arguments are: clockPin, dataPin
-// There are a few considerations for pin assignments:
-//    dataPin - This must be an analog pin.
+// clockPin is where the breakout board's pin 5 is connected
+// dataPin is where the breakout board's pin 6 is connected
+//    This must be an analog pin.
 //
 // Config 3 - arduino:avr:uno
 //BricktronicsButton b(7);
