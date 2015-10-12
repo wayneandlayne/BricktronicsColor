@@ -88,8 +88,8 @@ class BricktronicsColor
 
         // Printes out a human-readable color name to the Serial port
         // Pass in the output from getColor()
-        // TODO make this Steam-compatible so it can work with other streams?
-        void printColor(uint8_t);
+        // TODO make this Stream-compatible so it can work with other streams?
+        void printColor(uint8_t color);
 
 
     //private:
