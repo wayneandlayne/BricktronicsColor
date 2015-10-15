@@ -64,7 +64,7 @@ void loop()
 }
 ```
 
-# Constructors and begin()
+# Constructors and `begin()`
 
 #### `BricktronicsColor(uint8_t clockPin, uint8_t dataPin)`
 
