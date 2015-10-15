@@ -118,10 +118,10 @@ Prints out a human-readable color name to the Serial port. Pass in the value you
 
 #### Colors returned by `getColor()`
 
-# `COLOR_BLACK`
-# `COLOR_BLUE`
-# `COLOR_GREEN`
-# `COLOR_YELLOW`
-# `COLOR_RED`
-# `COLOR_WHITE`
+* `COLOR_BLACK`
+* `COLOR_BLUE`
+* `COLOR_GREEN`
+* `COLOR_YELLOW`
+* `COLOR_RED`
+* `COLOR_WHITE`
 
