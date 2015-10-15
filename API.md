@@ -108,7 +108,7 @@ Prints out a human-readable color name to the Serial port. Pass in the value you
 
 # Enumerations and constants
 
-#### Mode types for begin()
+#### Mode types for `begin()`
 
 * `TYPE_COLORFULL`
 * `TYPE_COLORRED`
