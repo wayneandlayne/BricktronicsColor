@@ -318,7 +318,7 @@ void BricktronicsColor::_calibrate()
         blankVal = 0;
     }
 
-    blankVal = (blankVal * 100) / (((SENSORMAX - MINBLANKVAL ) * 100) / ADMAX);
+    blankVal = (blankVal * 100) / (((uint16_t)( SENSORMAX - MINBLANKVAL ) * 100) / ADMAX);
     // TODO check for integer overflow here, might need to cast multiplicand bigger
 
     _calValues[INDEX_BLANK] = (blankVal * _calData[calTab][INDEX_BLANK]) >> 16 ;
