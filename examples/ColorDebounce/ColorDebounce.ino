@@ -8,7 +8,7 @@
 // This isn't necessarily the simplest or best way to debounce,
 // but it works for what we're using it for!
 //
-// Written in 2015 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
+// Written in 2016 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
 // To the extent possible under law, the author(s) have dedicated all
 //   copyright and related and neighboring rights to this software to the
 //   public domain worldwide. This software is distributed without any warranty.
@@ -23,6 +23,8 @@
 // This example can be run in three different ways. Pick one, and un-comment
 // the code lines corresponding to your chosen method. Comment-out the lines
 // for the other methods that you aren't using.
+// This sketch includes configuration blocks that are used by the W&L code
+// build and test system, feel free to ignore the "// Config" lines in the code below.
 
 // 1. With a Bricktronics Shield - Include these lines and be sure to
 // call BricktronicsShield::begin() in the setup() function below.
@@ -31,7 +33,7 @@
 // Select the sensor port (SENSOR_3 or SENSOR_4) in the constructor below.
 // Use the jumpers to connect only pins 3-4 for the color sensor.
 //
-// Config 1 - arduino:avr:uno
+// Config 1 - WNLCFGBS
 //#include <Wire.h>
 //#include <Adafruit_MCP23017.h>
 //#include <BricktronicsShield.h>
@@ -43,7 +45,7 @@
 // Select the sensor port (SENSOR_1 through SENSOR_4) in the constructor below.
 // Use the jumpers to connect only pins 3-4 for the color sensor.
 //
-// Config 2 - arduino:avr:mega:cpu=atmega2560
+// Config 2 - WNLCFGBMS
 //#include <BricktronicsMegashield.h>
 //BricktronicsColor c(BricktronicsMegashield::SENSOR_3);
 // Config end
@@ -64,7 +66,7 @@
 // dataPin is where the breakout board's pin 6 is connected
 //    This must be an analog pin.
 //
-// Config 3 - arduino:avr:uno
+// Config 3 - WNLCFGNS
 //BricktronicsColor c(8, 16);
 // Config end
 
@@ -76,7 +78,7 @@ void setup()
 
   // Only call this if you are using a Bricktronics Shield,
   // otherwise leave it commented-out.
-  // Config 1 - arduino:avr:uno
+  // Config 1 - WNLCFGBS
   //BricktronicsShield::begin();
   // Config end
 

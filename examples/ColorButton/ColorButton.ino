@@ -5,7 +5,7 @@
 // When the button is pressed, a single reading from the color sensor is taken
 // and converted into a color name and printed over the Serial Console.
 //
-// Written in 2015 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
+// Written in 2016 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
 // To the extent possible under law, the author(s) have dedicated all
 //   copyright and related and neighboring rights to this software to the
 //   public domain worldwide. This software is distributed without any warranty.
@@ -21,6 +21,8 @@
 // This example can be run in three different ways. Pick one, and un-comment
 // the code lines corresponding to your chosen method. Comment-out the lines
 // for the other methods that you aren't using.
+// This sketch includes configuration blocks that are used by the W&L code
+// build and test system, feel free to ignore the "// Config" lines in the code below.
 
 // 1. With a Bricktronics Shield - Include these lines and be sure to
 // call BricktronicsShield::begin() in the setup() function below.
@@ -31,7 +33,7 @@
 // If your chosen port has jumpers (ports 3 and 4), connect pins 2-3 and
 // 4-5 for the button, and connect only pins 3-4 for the color sensor.
 //
-// Config 1 - arduino:avr:uno
+// Config 1 - WNLCFGBS
 //#include <Wire.h>
 //#include <Adafruit_MCP23017.h>
 //#include <BricktronicsShield.h>
@@ -46,7 +48,7 @@
 // If your chosen port has jumpers, connect pins 2-3 and 4-5 for the button,
 // and connect only pins 3-4 for the color sensor.
 //
-// Config 2 - arduino:avr:mega:cpu=atmega2560
+// Config 2 - WNLCFGBMS
 //#include <BricktronicsMegashield.h>
 //BricktronicsButton b(BricktronicsMegashield::SENSOR_1);
 //BricktronicsColor c(BricktronicsMegashield::SENSOR_3);
@@ -79,7 +81,7 @@
 // dataPin is where the breakout board's pin 6 is connected
 //    This must be an analog pin.
 //
-// Config 3 - arduino:avr:uno
+// Config 3 - WNLCFGNS
 //BricktronicsButton b(7);
 //BricktronicsColor c(8, 16);
 // Config end
@@ -91,7 +93,7 @@ void setup()
 
   // Only call this if you are using a Bricktronics Shield,
   // otherwise leave it commented-out.
-  // Config 1 - arduino:avr:uno
+  // Config 1 - WNLCFGBS
   //BricktronicsShield::begin();
   // Config end
 
