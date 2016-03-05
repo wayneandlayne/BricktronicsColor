@@ -33,7 +33,7 @@
 // If your chosen port has jumpers (ports 3 and 4), connect pins 2-3 and
 // 4-5 for the button, and connect only pins 3-4 for the color sensor.
 //
-// Config 1 - WNLCFGBS
+// Config 1 - CFG_WNL_BS
 //#include <Wire.h>
 //#include <Adafruit_MCP23017.h>
 //#include <BricktronicsShield.h>
@@ -48,7 +48,7 @@
 // If your chosen port has jumpers, connect pins 2-3 and 4-5 for the button,
 // and connect only pins 3-4 for the color sensor.
 //
-// Config 2 - WNLCFGBMS
+// Config 2 - CFG_WNL_BMS
 //#include <BricktronicsMegashield.h>
 //BricktronicsButton b(BricktronicsMegashield::SENSOR_1);
 //BricktronicsColor c(BricktronicsMegashield::SENSOR_3);
@@ -81,7 +81,7 @@
 // dataPin is where the breakout board's pin 6 is connected
 //    This must be an analog pin.
 //
-// Config 3 - WNLCFGNS
+// Config 3 - CFG_WNL_NS
 //BricktronicsButton b(7);
 //BricktronicsColor c(8, 16);
 // Config end
@@ -93,7 +93,7 @@ void setup()
 
   // Only call this if you are using a Bricktronics Shield,
   // otherwise leave it commented-out.
-  // Config 1 - WNLCFGBS
+  // Config 1 - CFG_WNL_BS
   //BricktronicsShield::begin();
   // Config end
 
