@@ -6,9 +6,8 @@ BricktronicsColor
 More details at http://www.wayneandlayne.com/bricktronics/
 
 **To Download**
-Click the "Clone or download" button on the upper-right side of this page below the pink bar, then select "Download ZIP". Rename the uncompressed folder BricktronicsColor. Check that the BricktronicsColor folder contains BricktronicsColor.cpp and BricktronicsColor.h
-
-Place the BricktronicsColor library folder into your `<arduinosketchfolder>/libraries/` folder. You may need to create the libraries subfolder if this is your first installed library. Restart the Arduino IDE.
+* Click the "Clone or download" button on the upper-right side of this page below the pink bar, then select "Download ZIP". Rename the uncompressed folder BricktronicsColor. Check that the BricktronicsColor folder contains BricktronicsColor.cpp and BricktronicsColor.h
+* Place the BricktronicsColor library folder into your `<arduinosketchfolder>/libraries/` folder. You may need to create the libraries subfolder if this is your first installed library. Restart the Arduino IDE.
 
 **API Highlights**
 * `BricktronicsColor(uint8_t clockPin, uint8_t dataPin)` - Constructor
