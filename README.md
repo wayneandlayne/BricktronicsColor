@@ -5,7 +5,8 @@ BricktronicsColor
 
 More details at http://www.wayneandlayne.com/bricktronics/
 
-To download. click the "Download ZIP" button on the right side of this page. Rename the uncompressed folder BricktronicsColor. Check that the BricktronicsColor folder contains BricktronicsColor.cpp and BricktronicsColor.h
+**To Download**
+Click the "Clone or download" button on the upper-right side of this page below the pink bar, then select "Download ZIP". Rename the uncompressed folder BricktronicsColor. Check that the BricktronicsColor folder contains BricktronicsColor.cpp and BricktronicsColor.h
 
 Place the BricktronicsColor library folder into your `<arduinosketchfolder>/libraries/` folder. You may need to create the libraries subfolder if this is your first installed library. Restart the Arduino IDE.
 
