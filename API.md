@@ -8,8 +8,6 @@ Use the color sensor with sensor port 3 or 4 on the Bricktronics Shield. Use the
 
 Constructor usage for Bricktronics Shield
 ```C++
-#include <Wire.h>
-#include <Adafruit_MCP23017.h>
 #include <BricktronicsShield.h>
 #include <BricktronicsColor.h>
 BricktronicsColor c(BricktronicsShield::SENSOR_3);
